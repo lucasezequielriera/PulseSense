@@ -1,6 +1,5 @@
-import { jsPDF } from 'jspdf';
-
-export default function generateOnePager() {
+export default async function generateOnePager() {
+  const { jsPDF } = await import('jspdf');
   const doc = new jsPDF({ unit: 'pt', format: 'a4' });
 
   const marginX = 40;
