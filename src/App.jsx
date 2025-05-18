@@ -6,6 +6,8 @@ import Footer from './components/Footer';
 import Customers from './components/Customers';
 import Pricing from './components/Pricing';
 import OnePager from './components/OnePager';
+import WhatsAppFloating from './components/WhatsAppFloating';
+import ContactForm from './components/ContactForm';
 
 export default function App() {
   return (
@@ -17,9 +19,11 @@ export default function App() {
         <Customers />
         <Pricing />
         {/* <CTA /> */}
+        <ContactForm />
         <OnePager />
       </main>
       <Footer />
+      <WhatsAppFloating />
     </div>
   );
 } 

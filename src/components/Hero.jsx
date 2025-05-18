@@ -2,6 +2,11 @@ import { motion } from 'framer-motion';
 import ChatSimulation from './ChatSimulation';
 
 export default function Hero() {
+  function scrollToContact() {
+    const el = document.getElementById('contact');
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  }
+
   return (
     <section className="relative flex flex-col items-center justify-center min-h-screen pt-24 text-center bg-brand-gradient overflow-hidden">
       {/* Decorative blobs */}
@@ -35,6 +40,14 @@ export default function Hero() {
       </motion.p>
       {/* Chat simulation */}
       <ChatSimulation />
+
+      <button
+        type="button"
+        onClick={scrollToContact}
+        className="z-10 mt-6 inline-flex items-center gap-2 rounded-full bg-brand-gradient px-6 py-3 font-semibold text-white shadow-lg hover:shadow-xl transition-transform hover:scale-105"
+      >
+        Quiero contactarme!
+      </button>
     </section>
   );
 } 

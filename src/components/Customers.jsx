@@ -4,6 +4,7 @@ const companies = [
   'StartupXYZ',
   'AgenciaBeta',
   'GlobalCorp',
+  'Synapsis',
 ];
 
 export default function Customers() {
